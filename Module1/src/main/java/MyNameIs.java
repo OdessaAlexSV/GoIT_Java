@@ -1,4 +1,4 @@
-package module1.main.java;
+package main.java;
 
 public class MyNameIs {
     public static void main(String[] args) {
