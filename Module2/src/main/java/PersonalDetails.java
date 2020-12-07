@@ -1,4 +1,4 @@
-package main.java;
+package Module2.src.main.java;
 
 import java.util.Scanner;
 
