@@ -15,12 +15,11 @@ public class WordsFeeling {
         int count = arr.length;
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length(); j++) {
+            for (int j = 0; j < arr[i].length()-1; j++) {
                 if (!(phrase.toLowerCase().contains(Character.toString(arr[i].charAt(j))))) {
-                    j = (arr[i].length() - 1);
+                    j = (arr[i].length());
                     count--;
                     arr[i]="";
-                    continue;
                 }
             }
         }
