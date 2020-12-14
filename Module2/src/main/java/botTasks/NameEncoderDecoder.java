@@ -14,7 +14,7 @@ public class NameEncoderDecoder {
     }
 
     public String decode(String name) {
-        String modifiedName = name
+          String modifiedName = name
                 .substring(9)
                 .replace("YESNOTFORYOU", "")
                 .replace("1", "e")
