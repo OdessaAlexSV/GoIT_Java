@@ -1,6 +1,6 @@
 package Module2.src.main.java.botTasks;
 
-class NameEncoderDecoder_46 {
+public class NameEncoderDecoder {
 
     public String encode(String name) {
         String modifiedName = name
@@ -15,19 +15,19 @@ class NameEncoderDecoder_46 {
 
     public String decode(String name) {
         String modifiedName = name
-                .replace("YESNOTFORYOU","")
-                .replace("NOTFORYOU","")
-                .replace("1","e")
-                .replace("2","u")
-                .replace("3","i")
-                .replace("4","o")
-                .replace("5","a");
+                .substring(9)
+                .replace("YESNOTFORYOU", "")
+                .replace("1", "e")
+                .replace("2", "u")
+                .replace("3", "i")
+                .replace("4", "o")
+                .replace("5", "a");
 
         return modifiedName.strip();
     }
 
     public static void main(String[] args) {
-        NameEncoderDecoder_46 name = new NameEncoderDecoder_46();
+        NameEncoderDecoder name = new NameEncoderDecoder();
 
         System.out.println(name.encode("Crab"));
         System.out.println(name.decode("NOTFORYOUCr5bYESNOTFORYOU"));
