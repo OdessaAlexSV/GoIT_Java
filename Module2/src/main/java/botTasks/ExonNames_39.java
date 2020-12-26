@@ -1,4 +1,4 @@
-package Module2.src.main.java.botTasks;
+package main.java.botTasks;
 
 public class ExonNames_39 {
 

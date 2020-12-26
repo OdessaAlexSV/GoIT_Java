@@ -1,4 +1,4 @@
-package Module2.src.main.java;
+package main.java;
 
 public class Quiz {
     public static void main(String[] args) {

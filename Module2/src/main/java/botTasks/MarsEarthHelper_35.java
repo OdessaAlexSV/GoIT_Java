@@ -1,4 +1,4 @@
-package Module2.src.main.java.botTasks;
+package main.java.botTasks;
 
 public class MarsEarthHelper_35 {
     public int convertAppleCount(float count) {

@@ -1,4 +1,4 @@
-package Module2.src.main.java.botTasks;
+package main.java.botTasks;
 
 class NumberTester_26 {
     public boolean isEven(int number) {

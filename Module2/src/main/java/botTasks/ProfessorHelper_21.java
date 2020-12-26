@@ -1,4 +1,4 @@
-package Module2.src.main.java.botTasks;
+package main.java.botTasks;
 
 class ProfessorHelper_21 {
     public boolean areNumbersCool(int number1, int number2) {

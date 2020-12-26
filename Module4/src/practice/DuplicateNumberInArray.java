@@ -1,0 +1,49 @@
+package practice;
+
+public class DuplicateNumberInArray {
+    public static void main(String[] args) {
+        int[] withoutDuplicate = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
+        int[] withDuplicate = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
+
+        firstMethod(withoutDuplicate);
+        firstMethod(withDuplicate);
+
+        secondMethod(withoutDuplicate, withDuplicate);
+    }
+
+    private static void secondMethod(int[] array1, int[] array2) {
+        int sum = 0;
+        for (int value : array1) {
+            sum += value;
+        }
+
+        int sumWithDuplicate = 0;
+        for (int value : array2) {
+            sumWithDuplicate += value;
+        }
+
+        System.out.println(sumWithDuplicate - sum);
+    }
+
+    private static void firstMethod(int[] array) {
+        boolean isDuplicateFound = false;
+
+        for (int i = 0; i < array.length; i++) {
+            int element = array[i];
+
+            for (int j = 0; j < array.length; j++) {
+                if (array[j] == element && j != i) {
+                    System.out.println("There is a duplicate: " + element);
+                    isDuplicateFound = true;
+                    break;
+                }
+            }
+            if (isDuplicateFound) {
+                break;
+            }
+        }
+        if (!isDuplicateFound) {
+            System.out.println("There is no duplicate");
+        }
+    }
+}
