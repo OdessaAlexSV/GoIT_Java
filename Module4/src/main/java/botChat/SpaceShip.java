@@ -1,6 +1,6 @@
 package main.java.botChat;
 
-public class SpaceShip {
+class SpaceShip {
     private String name;
     private String serialNumber;
 

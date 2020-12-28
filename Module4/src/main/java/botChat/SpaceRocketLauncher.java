@@ -1,6 +1,6 @@
 package main.java.botChat;
 
-public class SpaceRocketLauncher {
+class SpaceRocketLauncher {
 
     private int bigRocketCount;
     private int smallRocketCount;

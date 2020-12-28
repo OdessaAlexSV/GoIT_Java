@@ -1,4 +1,4 @@
-package main.java.botChat;
+package main.java.botChat.tanker;
 
 public class MX200Tanker extends Tanker {
 

@@ -1,6 +1,6 @@
-package main.java.botChat;
+package main.java.botChat.passengers;
 
-abstract class Passenger {
+abstract public class Passenger {
     public abstract String getType();
 
     public abstract int getTicketPrice();

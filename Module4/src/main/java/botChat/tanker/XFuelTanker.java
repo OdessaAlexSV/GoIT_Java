@@ -1,6 +1,6 @@
-package main.java.botChat;
+package main.java.botChat.tanker;
 
-public class XFuelTanker extends Tanker{
+public class XFuelTanker extends Tanker {
 
     @Override
     protected String getFuelType() {

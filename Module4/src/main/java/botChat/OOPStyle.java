@@ -1,5 +1,15 @@
 package main.java.botChat;
 
+import main.java.botChat.engine.AdvancedXFuelEngine;
+import main.java.botChat.engine.Engine;
+import main.java.botChat.engine.XFuelEngine;
+import main.java.botChat.passengers.Passenger;
+import main.java.botChat.passengers.RegularPassenger;
+import main.java.botChat.passengers.VIPPassenger;
+import main.java.botChat.tanker.MX200Tanker;
+import main.java.botChat.tanker.Tanker;
+import main.java.botChat.tanker.XFuelTanker;
+
 public class OOPStyle {
 
     public static void main(String[] args) {
@@ -84,6 +94,50 @@ public class OOPStyle {
         Tanker tanker2 = new MX200Tanker();
         tanker2.setSerialNumber("SN504030");
         tanker2.refuel(300);
+
+        //--------------------------------------------------------------------------------
+        System.out.println("*".repeat(15));
+        //--------------------------------------------------------------------------------
+
+        Passenger regular = new RegularPassenger();
+        System.out.println(regular.getType()); //Regular
+        System.out.println(regular.getTicketPrice()); //199
+
+        Passenger vip = new VIPPassenger();
+        System.out.println(vip.getType());  //VIP
+        System.out.println(vip.getTicketPrice()); //399
+
+        //--------------------------------------------------------------------------------
+        System.out.println("*".repeat(15));
+        //--------------------------------------------------------------------------------
+
+        LaunchCalculator calculator = new LaunchCalculator();
+
+        int jupiterStarPrice = calculator.calculateTotalPrice(new JupiterStar(), 100);
+        System.out.println("JupiterStar price = " + jupiterStarPrice); //700
+
+        int mercuryBeatPrice = calculator.calculateTotalPrice(new MercuryBeat(), 100);
+        System.out.println("MercuryBeat price = " + mercuryBeatPrice); //1500
+
+        int sunHeavenPrice = calculator.calculateTotalPrice(new SunHeaven(), 100);
+        System.out.println("SunHeaven price = " + sunHeavenPrice); //2000
+
+        //--------------------------------------------------------------------------------
+        System.out.println("*".repeat(15));
+        //--------------------------------------------------------------------------------
+
+        SpaceshipCalc calc = new SpaceshipCalc();
+        System.out.println(calc.calculateAirBalloons(35)); // 350
+        System.out.println(calc.calculateBookCount(50)); // 100
+
+        //--------------------------------------------------------------------------------
+        System.out.println("*".repeat(15));
+        //--------------------------------------------------------------------------------
+
+        System.out.println(SpaceUtils.PLANET_COUNT); // выводит в консоль 8
+        System.out.println(SpaceUtils.pluralPlanets(1)); // выводит в консоль 1 planet
+        System.out.println(SpaceUtils.pluralPlanets(5)); // выводит в консоль 5 planets
+        System.out.println(SpaceUtils.generateStartMessage("Earthkeeper", "20:40")); // выводит в консоль Ship Earthkeeper start at 20:40.
 
     }
 
