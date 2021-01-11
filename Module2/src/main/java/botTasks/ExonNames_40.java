@@ -17,7 +17,7 @@ public class ExonNames_40 {
     public String getNameCode(String name) {
         char s1 = name.charAt(0);
         char s2 = name.charAt(name.length()-1);
-        String str = (String.valueOf(s1)+s2).toUpperCase();
+        String str = (s1+String.valueOf(s2)).toUpperCase();
         return str;
     }
 

@@ -21,13 +21,13 @@ public class ExonNames_41 {
     }
 
     public boolean isMoneyName(String name) {
-        char s1 = getNameCode(name).charAt(0);
-        boolean isDigit1 = s1 >= '0' && s1 <= '9';
+        char firstLetter = name.charAt(0);
+        char lastLetter = name.charAt(name.length() - 1);
 
-        char s2 = getNameCode(name).charAt(1);
-        boolean isDigit2 = s2 >= '0' && s2 <= '9';
+        boolean firstLetterOk = firstLetter >= '0' && firstLetter <= '9';
+        boolean lastLetterOk = lastLetter >= '0' && lastLetter <= '9';
 
-        return isDigit1 && isDigit2;
+        return firstLetterOk && lastLetterOk;
     }
 
     //Test output
