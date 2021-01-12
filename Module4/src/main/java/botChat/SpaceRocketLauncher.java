@@ -28,17 +28,15 @@ class SpaceRocketLauncher {
     }
 
     public void launchBigRocket() {
-        if (bigRocketCount > 0){
-            int newAmount=getBigRocketCount()-1;
-            setBigRocketCount(newAmount);
+        if (getBigRocketCount() > 0){
+            setBigRocketCount(getBigRocketCount()-1);
             System.out.println("Launch big rocket");
         }
     }
 
     public void launchSmallRocket() {
-        if (smallRocketCount > 0){
-            int newAmount=getSmallRocketCount()-1;
-            setSmallRocketCount(newAmount);
+        if (getSmallRocketCount() > 0){
+            setSmallRocketCount(getSmallRocketCount()-1);
             System.out.println("Launch small rocket");
         }
     }

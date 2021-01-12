@@ -24,6 +24,9 @@ public class QuadraticEquationSolver {
 
     public static void main(String[] args) {
         QuadraticEquationSolver example = new QuadraticEquationSolver();
-        example.solve(2, -24, 72);
+        double[] result = example.solve(2, -24, 72);
+        for (double route : result){
+            System.out.println(route);
+        }
     }
 }
