@@ -45,7 +45,8 @@ class Point {
         // typecast o to Complex so that we can compare data members
         Point point = (Point) obj;
         // Compare the data members and return accordingly
-        return (x == point.x) && (y == point.y) && ( z == point.z);
+        return (x == point.x) && (y == point.y) && (z == point.z);
+
     }
 
     @Override
