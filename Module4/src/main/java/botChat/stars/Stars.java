@@ -34,6 +34,24 @@ public class Stars {
 
     @Override
     public String toString() {
+        int counter1000 = count / 1000;
+        count %= 1000;
+        int counter100 = count / 100;
+        count %= 100;
+        int counter10 = count / 10;
+        count %= 10;
+        int counter1 = count / 1;
+        String result1000 = "X";
+        String result100 = "Y";
+        String result10 = "Z";
+        String result1 = "*";
+        return result1000.repeat(counter1000) + result100.repeat(counter100) +
+                result10.repeat(counter10) + result1.repeat(counter1);
+    }
+
+        /*
+    @Override
+    public String toString() {
         int[] stars = {1000,100,10,1};
         String result = "";
         int sum = getCount();
@@ -58,6 +76,7 @@ public class Stars {
         }
         return result;
     }
+*/
 
     public static void main(String[] args) {
         Stars stars = new Stars();
