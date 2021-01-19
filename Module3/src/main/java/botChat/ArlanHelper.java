@@ -68,14 +68,10 @@ public class ArlanHelper {
     }
 
     public String drawPattern(char[] pattern, int repeatCount) {
-        int i = 0, j = 0;
+        int i = 0;
         String result = "";
-        while (j++ < repeatCount) {
-            while (i < pattern.length) {
-                result += pattern[i];
-                i++;
-            }
-            i = 0;
+        while (i++ < repeatCount) {
+            result += String.valueOf(pattern);
         }
         return result;
     }
