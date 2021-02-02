@@ -6,7 +6,7 @@ package main.java;
  * Метод принимает на вход массив байт, делает из этого массива строку, приводит ее в нижний регистр, и возвращает эту строку.
  */
 
-public class StringByteWorker {
+class StringByteWorker {
     public String process(byte[] startBytes) {
         return new String(startBytes).toLowerCase();
     }

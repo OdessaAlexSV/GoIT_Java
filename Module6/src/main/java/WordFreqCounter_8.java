@@ -9,7 +9,7 @@ package main.java;
  * Программа должна игнорировать регистр букв (слова, состоящие из маленьких и больших букв, считаются одинаковыми).
  */
 
-public class WordFreqCounter {
+class WordFreqCounter {
     public float countFreq(String phrase, String word) {
         float count = 0;
         String[] arr = phrase.trim().toLowerCase().split(" ");

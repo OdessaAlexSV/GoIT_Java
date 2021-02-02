@@ -6,6 +6,19 @@ public class FirNumFizzBuzz extends FirNum {
     public int calc(int n) {
         int res = 0;
         while (n >= 1) {
+            if ((n % 3 == 0) ^ (n % 5 == 0)) {
+                res += n;
+            }
+            n--;
+        }
+        return res;
+    }
+
+/*
+    @Override
+    public int calc(int n) {
+        int res = 0;
+        while (n >= 1) {
             if ((n % 3 == 0 && n % 5 == 0)) {
             } else if (n % 3 == 0) {
                 res += n;
@@ -16,7 +29,7 @@ public class FirNumFizzBuzz extends FirNum {
         }
         return res;
     }
-/*
+
     @Override
     public int calc(int n) {
         int result = 0;

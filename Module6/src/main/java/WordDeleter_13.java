@@ -4,7 +4,7 @@ package main.java;
  * Напиши класс WordDeleter.
  * У этого класса создай метод public String remove(String phrase, String[] words).
  * Этот метод принимает строку phrase, которая состоит из отдельных слов, разделенных ровно одним пробелом, и удаляет из нее все слова, указанные в массиве words.
- * * Возвращается строка без этих слов. Оставшиеся слова должны так же быть разделены ровно одним пробелом.
+ * Возвращается строка без этих слов. Оставшиеся слова должны так же быть разделены ровно одним пробелом.
  */
 
 class WordDeleter {
@@ -30,9 +30,33 @@ class WordDeleter {
                 builder.append(s + " ");
             }
         }
-        return builder.toString().strip();
+        return builder.toString().trim();
     }
 }
+
+/*
+class WordDeleter {
+    public String remove(String phrase, String[] words) {
+        boolean found = false;
+        String[] phrases = phrase.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (String phr : phrases) {
+            for (String word : words) {
+                if (phr.equals(word)) {
+                    found = true;
+                    continue;
+                }
+            }
+            if (!found) {
+                result.append(phr);
+                result.append(" ");
+            }
+            found = false;
+        }
+        return result.toString().trim();
+    }
+}
+*/
 
 class WordDeleterTest {
     public static void main(String[] args) {
