@@ -30,9 +30,9 @@ public class AloneAtHome {
 
     char[][] house = new char[][]{
                 "#################             ".toCharArray(),
-                "#      o        #   o         ".toCharArray(),
+                "#              o#   o         ".toCharArray(),
                 "#          ######        o    ".toCharArray(),
-                "####       #                  ".toCharArray(),
+                "####       #o                 ".toCharArray(),
                 "   #       ###################".toCharArray(),
                 "   #                         #".toCharArray(),
                 "   #                  X      #".toCharArray(),
