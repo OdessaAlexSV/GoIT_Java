@@ -1,5 +1,9 @@
 package main.java.botTasks;
 
+/**
+ * Допиши в классе GameSaver статический блок инициализации, чтобы при создании первого объекта GameSaver в консоль выводился текст GameSaver created!.
+ */
+
 public class GameSaver {
 
     static {
